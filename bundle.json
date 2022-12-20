@@ -1,0 +1,14 @@
+{
+	"name": "web-component-echarts", 
+	"resources": {
+		"component.js": {
+			"url": "component.js"
+		}, 
+		"component.tpl": {
+			"url": "component.tpl"
+		}, 
+		"echarts.js": {
+			"url": "echarts.js"
+		}
+	}
+}
