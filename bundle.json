@@ -9,6 +9,9 @@
 		}, 
 		"echarts.js": {
 			"url": "echarts.js"
+		}, 
+		"component.scss": {
+			"url": "component.scss"
 		}
 	}
 }
