@@ -127,7 +127,7 @@ Vue.view("echarts-graph", {
 			var promises = [];
 			if (this.cell.state.pipelines) {
 				nabu.utils.arrays.merge(promises, this.cell.state.pipelines.map(function(pipeline) {
-					var promise = self.$services.data.load({target:pipeline, page: self.page});
+					var promise = self.$services.data.load({target:pipeline, page: self.page, instance: self});
 					promise.then(function(result) {
 						var data = result.records;
 						
