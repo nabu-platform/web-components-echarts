@@ -114,6 +114,15 @@ Vue.view("echarts-graph", {
 			option.yAxis = {
 				type: 'value'
 			};
+
+			// Add min and max values to yAxis if configured
+			if (this.cell.state.yAxisMin != null) {
+				option.yAxis.min = Number(this.$services.page.interpret(this.cell.state.yAxisMin, this));
+			}
+			if (this.cell.state.yAxisMax != null) {
+				option.yAxis.max = Number(this.$services.page.interpret(this.cell.state.yAxisMax, this));
+			}
+
 			option.series = [];
 			
 			option.grid = {

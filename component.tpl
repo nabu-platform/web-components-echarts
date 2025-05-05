@@ -35,5 +35,9 @@
 		<n-form-text v-model="cell.state.gridRight" type="range" :minimum="0" :maximum="100" label="Grid right"/>
 		<n-form-text v-model="cell.state.gridBottom" type="range" :minimum="0" :maximum="100" label="Grid bottom"/>
 		<n-form-text v-model="cell.state.gridLeft" type="range" :minimum="0" :maximum="100" label="Grid left"/>
+		<h2 class="section-title">Y-Axis Range</h2>
+		<n-form-text v-model="cell.state.yAxisMin" label="Y-Axis Minimum"/>
+		<n-form-text v-model="cell.state.yAxisMax" label="Y-Axis Maximum"/>
+
 	</div>
 </template>
